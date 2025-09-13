@@ -1,11 +1,9 @@
 ---
-title: "Writeups"
-description: "Learn about some of our cybersecurity writeups and projects."
+title: "TryHackMe"
+draft: false
+
 cascade:
-  showEdit: false
-  showSummary: false
-  hideFeatureImage: true
-  showReadingTime: false
+  showSummary: true
 ---
 
 {{< lead >}}

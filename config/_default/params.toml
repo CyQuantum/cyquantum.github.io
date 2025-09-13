@@ -3,7 +3,6 @@ defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
-mainSections = [ "writeups" ]
 fathomAnalytics = { }
 verification = { }
 defaultBackgroundImage = "img/file.jpg"
@@ -27,6 +26,7 @@ showMoreLinkDest = "/writeups/"
 cardView = true
 cardViewScreenWidth = false
 layoutBackgroundBlur = true
+
 
 [article]
 showDate = true
@@ -53,17 +53,21 @@ showZenMode = true
 showViews = true
 
 [list]
-showHero = true
-heroStyle = "background"
-layoutBackgroundHeaderSpace = false
-showBreadcrumbs = false
-showSummary = true
-showTableOfContents = false
-showCards = true
-groupByYear = true
-cardView = true
-cardViewScreenWidth = false
-showViews = false
+  showHero = false
+  # heroStyle = "" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = false
+  showSummary = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showCards = true
+  orderByWeight = false
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
 
 [sitemap]
 excludedKinds = [ ]

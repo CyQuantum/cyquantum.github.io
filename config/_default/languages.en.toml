@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "CyQuantum"
+title = "Cybersecurity Writeups"
 
 [params]
 displayName = "EN"
@@ -11,11 +11,3 @@ rtl = false
 description = "My awesome website"
 copyright = "Copy, _right?_ :thinking_face:"
 dateFormat = "2 January 2006"
-
-[params.author]
-name = "Daksh"
-image = "img/avatar.png"
-links = [
-    { link = "https://dakshthapar.com" },
-    { github = "https://github.com/DakshRocks21" },
-]
