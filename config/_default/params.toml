@@ -1,0 +1,81 @@
+colorScheme = "Autumn"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+mainSections = [ "writeups" ]
+fathomAnalytics = { }
+verification = { }
+defaultBackgroundImage = "img/file.jpg"
+
+[header]
+layout = "fixed"
+
+[footer]
+showCopyright = true
+showThemeAttribution = false
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "background"
+homepageImage = "img/hacker.jpeg"
+showRecent = true
+showRecentItems = 3
+showMoreLink = true
+showMoreLinkDest = "/writeups/"
+cardView = true
+cardViewScreenWidth = false
+layoutBackgroundBlur = true
+
+[article]
+showDate = true
+showDateUpdated = false
+showAuthor = true
+showHero = true
+heroStyle = "background"
+showBreadcrumbs = true
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = true
+showAuthorsBadges = false
+showWordCount = true
+showSummary = true
+sharingLinks = [ "linkedin", "whatsapp", "email" ]
+showZenMode = true
+showViews = true
+
+[list]
+showHero = true
+heroStyle = "background"
+layoutBackgroundHeaderSpace = false
+showBreadcrumbs = false
+showSummary = true
+showTableOfContents = false
+showCards = true
+groupByYear = true
+cardView = true
+cardViewScreenWidth = false
+showViews = false
+
+[sitemap]
+excludedKinds = [ ]
+
+[taxonomy]
+showTermCount = true
+
+[firebase]
+apiKey = "AIzaSyCnvDWnmgejPCsPxt2j1D2kybt2yqrQ2hs"
+authDomain = "daksh-portfolio.firebaseapp.com"
+projectId = "daksh-portfolio"
+storageBucket = "daksh-portfolio.appspot.com"
+messagingSenderId = "303079632589"
+appId = "1:303079632589:web:65386626e819a273180384"
+measurementId = "G-RVJVH5CHGF"
