@@ -3,7 +3,7 @@
 # https://nunocoracao.github.io/blowfish/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://blog.dakshthapar.com/"
+baseURL = "https://cyquantum.github.io/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true

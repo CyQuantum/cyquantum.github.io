@@ -9,7 +9,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -54,7 +53,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --minify -d ./public --baseURL https://blog.dakshthapar.com
+          hugo --minify -d ./public --baseURL https://cyquantum.github.io/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -65,7 +64,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://blog.dakshthapar.com
+      url: https://cyquantum.github.io/
     runs-on: ubuntu-latest
     needs: build
     steps:

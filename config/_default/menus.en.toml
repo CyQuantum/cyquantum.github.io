@@ -21,19 +21,6 @@
   weight = 20
 
 
-[[main]]
-  identifier = "github"
-  pre = "github"
-  url = "https://github.com/DakshRocks21"
-  weight = 50
-
-[[main]]
-  identifier = "email"
-  pre = "email"
-  url = "mailto:daksh@dakshthapar.com"
-  weight = 60
-
-
  [[footer]]
    name = "Tags"
    pageRef = "tags"
