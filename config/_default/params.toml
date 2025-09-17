@@ -11,7 +11,7 @@ defaultBackgroundImage = "img/file.jpg"
 layout = "fixed"
 
 [footer]
-showCopyright = true
+showCopyright = false
 showThemeAttribution = false
 showAppearanceSwitcher = true
 showScrollToTop = true
