@@ -4,18 +4,18 @@ summary: "Hack into this Windows machine and escalate your privileges to Adminis
 categories: ["Try Hack Me"]
 tags: ["Windows"]
 date: 2025-09-16
+layout: "simple"
 ---
 
-{{% zenmode-enabled %}}
-
 # Blueprint room
+
 https://tryhackme.com/room/blueprint
 
 First step was of course to run nmap on the ip to find open ports
 <img width="1336" height="664" alt="image" src="https://github.com/user-attachments/assets/edc83be2-8db1-400f-bec9-6c57d1b6eadd" />
 
-
 First, lets try running smbmap to find out more about which shares are there
+
 ```shell
 ┌──(ravin㉿MSI)-[/mnt/d]
 └─$ smbmap -u anonymous -H 10.201.107.66
@@ -34,7 +34,9 @@ First, lets try running smbmap to find out more about which shares are there
         Windows                                                 NO ACCESS
 [-] Closing connections..
 ```
+
 which we can then login with
+
 ```shell
 ┌──(ravin㉿MSI)-[/mnt/d]
 └─$ smbclient //10.201.107.66/Users -U anonymous
@@ -43,6 +45,7 @@ which we can then login with
 but, this was to no avail as there was nothing useful.
 
 I then pivoted to looking towards port 8080 as there seemed to be some interesting stuff there, catalog and docs
+
 ```
 8080/tcp  open  http         Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
 |_http-server-header: Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28
@@ -55,6 +58,7 @@ I then pivoted to looking towards port 8080 as there seemed to be some interesti
 |_http-title: Index of /
 | http-methods:
 ```
+
 I used searchsploit to find out if there were any vulnerabilities, and turns out there were!
 <img width="1433" height="328" alt="image" src="https://github.com/user-attachments/assets/56817df0-b648-462c-a1f8-e67a8d436ea1" />
 or you can also use
@@ -70,8 +74,4 @@ Now, there is only one task remaining, and that is to find the Lab user’s NTLM
 We can download the files off `http://10.201.107.66:8080/oscommerce-2.3.4/catalog/install/includes` and use `samdump2` to dump the hashes  
 <img width="1070" height="147" alt="image" src="https://github.com/user-attachments/assets/24875bbb-a8e6-47af-a7ad-33f028b5d125" />  
 We then use crackstation to crack the hash and find the password `googleplus`  
-<img width="1340" height="501" alt="image" src="https://github.com/user-attachments/assets/34707411-9aa8-4e17-bdea-32f672ef262e" />  
-
-
-
-
+<img width="1340" height="501" alt="image" src="https://github.com/user-attachments/assets/34707411-9aa8-4e17-bdea-32f672ef262e" />
