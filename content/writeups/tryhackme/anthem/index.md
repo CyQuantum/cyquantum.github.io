@@ -3,7 +3,7 @@ title: "Anthem CTF"
 summary: "Beginner level, No bruteforce. RDP + browser."
 categories: ["Try Hack Me"]
 tags: ["Windows"]
-date: 2025-09-18
+date: 2025-09-17
 ---
 
 ## Nmap Scan
