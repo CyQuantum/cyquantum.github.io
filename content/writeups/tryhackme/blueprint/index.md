@@ -6,6 +6,8 @@ tags: ["Windows"]
 date: 2025-09-16
 ---
 
+{{% zenmode-enabled %}}
+
 # Blueprint room
 https://tryhackme.com/room/blueprint
 
